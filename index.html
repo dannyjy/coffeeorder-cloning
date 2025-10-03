@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Vite App</title>
+  </head>
+  <body class="bg-[#252324]">
+    <header class="bg-linear-to-tl from-[#eed2b1] to-[#f5e3ce] py-10">
+      <nav class="flex justify-between max-lg:px-8 lg:justify-around items-center pb-10">
+        <div class="flex gap-4 justify-center items-center">
+          <img src="./src/images/logo.png" alt="" class="w-[40px]">
+          <h1 class="text-xl text-[#b3895f]">BRUSSELS BREWERY</h1>
+        </div>
+        <section class="flex max-lg:hidden justify-center gap-5 items-center">
+          <ul class="flex flex-col lg:flex-row gap-8 text-amber-950">
+            <li class="">Shop</li>
+            <li class="">About</li>
+            <li class="">Blog</li>
+            <li class="">Locations</li>
+            <li class="">Contact</li>
+          </ul>
+          <button class="bg-[#53352e] text-amber-50 py-2.5 px-6 rounded-[.7rem]">Order Online</button>
+        </section>
+        <!-- Toggled menu -->
+         <div class="lg:hidden" id="toggledMenu">
+           <section class="flex flex-col bg-[#f5e3ce] px-6 w-full h-full justify-center absolute left-0 top-0 gap-5 items-center">
+             <div class="lg:hidden"><img src="./src/images/close.svg" alt="" class="absolute top-9 left-4 w-10 sm:w-12" id="close"></div>
+             <ul class="flex flex-col lg:flex-row gap-5 text-amber-950 items-center w-full">
+               <li class="hover:bg-[#eed2b1] focus:hover:bg-[#eed2b1] cursor-pointer w-full text-center p-3">Shop</li>
+               <li class="hover:bg-[#eed2b1] cursor-pointer w-full text-center p-3">About</li>
+               <li class="hover:bg-[#eed2b1] cursor-pointer w-full text-center p-3">Blog</li>
+               <li class="hover:bg-[#eed2b1] cursor-pointer w-full text-center p-3">Locations</li>
+               <li class="hover:bg-[#eed2b1] cursor-pointer w-full text-center p-3">Contact</li>
+              </ul>
+              <button class="bg-[#53352e] text-amber-50 py-2.5 px-6 rounded-[.7rem] w-full">Order Online</button>
+            </section>
+          </div>
+        <!-- END -->
+        <div class="lg:hidden">
+          <img src="./src/images/hamburger-menu.svg" alt="" class="w-10" id="menu">
+        </div>
+      </nav>
+      <div class="flex justify-center items-center">
+        <main class="grid md:grid-cols-6 justify-center items-center px-8 max-w-[1200px] ">
+          <div class="space-y-4 col-span-3">
+            <div class="text-amber-950 text-4xl sm:text-4xl md:text-5xl lg:text-[3.5rem]">
+              <h1 class="">Brewed To Perfection,</h1>
+              <h1 class="">Served With Love</h1>
+            </div>
+            <p class="text-amber-950 md:max-w-[500px] text-[1rem]">Indulge in handcrafed coffee, freshly baked pastries, and a welcoming atreosphere
+              designed to inspire and unwind.</p>
+              <div class="flex gap-4">
+                <button class="bg-[#53352e] text-amber-50 py-2.5 px-6 rounded-[.7rem] max-sm:text-[.8rem]">Order Online</button>
+                <button class="border-[#53352e] border-2 text-amber-950 py-2.5 px-6 rounded-[.7rem] max-sm:text-[.8rem]">Find a Location</button>
+              </div>
+            </div>
+            <img src="/src/images/coffee.jpg" alt="" class="col-span-3">
+          </main>
+        </div>
+      </header>
+      <section class="h-fit md:py-30 p-8 md:px-40 space-y-20">
+        <div class="flex justify-around items-center gap-20 max-lg:flex-wrap-reverse ">
+          <div class="w-full"><img src="./src/images/coffeeBeans.jpg" alt="" class="rounded-md w-full sm:min-w[300px]"></div>
+          <div class="space-y-6">
+            <h1 class="text-[#f5e3ce] text-4xl">Handmade Just For You</h1>
+            <p class="text-[#ffd8ac]">
+              Our organically grown coffee beans are roasted over an open fame in a
+              one-of a-kind, brick roaster, There's nothing quite like a cup of Brussels
+              Grewery coffee.
+            </p>
+            <button class="border-[#ffd8ac] border-2 text-[#ffd8ac] py-2.5 px-6 rounded-[.7rem]">View our menu <span><img src="" alt=""></span></button>
+          </div>
+        </div>
+      <div class="flex justify-around items-center gap-20 max-lg:flex-wrap">
+        <div class="space-y-6">
+          <h1 class="text-[#f5e3ce] text-4xl">Made In Brussels</h1>
+          <p class="text-[#ffd8ac] sm:text-[1rem] text-[.9rem]">Welcome to Brussels Beewery, where the charm of Brussels meets the
+            aroma of freshly brewed coffee. Our cafe is a cory haven where friends
+            gather, ideas spark, and every sip tells-a story.</p>
+          <p class="text-[#ffd8ac]">Come and experience the soul of Brussels in every cup and bite-we
+            can't wait to welcome youl</p>
+          <button class="border-[#ffd8ac] border-2 text-[#ffd8ac] py-2.5 px-6 rounded-[.7rem]">View our menu <span><img src="" alt=""></span></button>
+        </div>
+        <div class="w-full"><img src="./src/images/coffeeShop.jpg" alt="" class="rounded-md w-full sm:min-w-[300px]"></div>
+      </div>
+    </section>
+    <article>
+      <div class="bg-amber-300 py-8">
+        
+      </div>
+      <div class="h-[300px] w-fit flex overflow-scroll xl:overflow-hidden">
+        <img src="./src//images/milk&C.jpg" alt="">
+        <img src="./src/images/brownCoffeeCups.jpg" alt="">
+        <img src="./src//images/CoffeeOfBranch.jpg" alt="">
+        <img src="./src//images/milk&Coffee.jpg" alt="">
+      </div>
+    </article>
+    <footer class="h-fit space-y-20 md:py-30 p-8 md:px-40">
+
+    </footer>
+    <script src="/src/main.js"></script>
+  </body>
+</html>
