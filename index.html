@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="./src/style.css">
     <title>Vite App</title>
   </head>
-  <body class="bg-[#252324]">
+  <body class="bg-[#242224]">
     <header class="bg-linear-to-tl from-[#eed2b1] to-[#f5e3ce] py-10">
       <nav class="flex justify-between max-lg:px-8 lg:justify-around items-center pb-10">
         <div class="flex gap-4 justify-center items-center">
           <img src="./src/images/logo.png" alt="" class="w-[40px]">
-          <h1 class="text-xl text-[#b3895f]">BRUSSELS BREWERY</h1>
+          <h1 class="text-xl text-[#b3895f] max-sm:text-[.9rem]">BRUSSELS BREWERY</h1>
         </div>
         <section class="flex max-lg:hidden justify-center gap-5 items-center">
           <ul class="flex flex-col lg:flex-row gap-8 text-amber-950">
@@ -88,16 +88,55 @@
       </div>
     </section>
     <article>
-      <div class="bg-amber-300 py-8">
-        
+      <div class="bg-[#4F3E37] text-[#ffd8ac] py-8 max-md:px-8 gap-4 flex max-sm:flex-col justify-evenly items-center">
+        <div class="flex justify-center items-center gap-5">
+          <img src="./src/images/instagram-167-svgrepo-com.svg" alt="" class="max-sm:w-[40px] w-[55px]">
+          <section class="gap-4">
+            <h1 class="text-2xl max-sm:text-xl">#Brusselscoffee</h1>
+            <p>@Brusseltbrewery</p>
+          </section>
+        </div>
+        <div class="flex justify-center items-center gap-5">
+          <img src="./src/images/facebook-svgrepo-com.svg" alt="" class="w-[65px]">
+          <section class="gap-4">
+            <h1 class="text-2xl max-sm:text-xl">Follow Us</h1>
+            <p>Brusselibrowery</p>
+          </section>
+        </div>
       </div>
-      <div class="h-[300px] w-fit flex overflow-scroll xl:overflow-hidden">
+      <div class="h-[300px] max-sm:h-[200px] w-fit flex overflow-scroll xl:overflow-hidden">
         <img src="./src//images/milk&C.jpg" alt="">
         <img src="./src/images/brownCoffeeCups.jpg" alt="">
         <img src="./src//images/CoffeeOfBranch.jpg" alt="">
         <img src="./src//images/milk&Coffee.jpg" alt="">
       </div>
     </article>
+    <main class="text-[#f5e3ce] flex flex-col justify-center items-center space-y-8">
+      <h1 class=" text-3xl ">Locations</h1>
+      <div class="flex items-center justify-between gap-8">
+        <div class="space-y-8">
+          <h1 class="border-b-2 border-amber-400 w-16 pb-2 text-2xl">Brussels</h1>
+          <div>
+            <p>Rus ou Mid 45, 1000</p>
+            <p>Anderlecht, Belgum</p>
+          </div>
+        </div>
+        <div class="space-y-8">
+          <h1 class="border-b-2 border-amber-400 w-16 pb-2 text-2xl">Anderlecht</h1>
+          <div>
+            <p>PL De Linde 27, 1070</p>
+            <p>Bruxetes, Be-gian</p>
+          </div>
+        </div>
+        <div class="space-y-8">
+          <h1 class="border-b-2 border-amber-400 w-16 pb-2 text-2xl">Machelen</h1>
+          <div>
+            <p>Dorpsplein 7, 11130</p>
+            <p>Machelen Betpium</p>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer class="h-fit space-y-20 md:py-30 p-8 md:px-40">
 
     </footer>
